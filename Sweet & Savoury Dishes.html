@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <title>Savoury and Sweet Dishes Restaurant</title>
+    <!-- External CSS (if any) -->
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background: #f3e5ab; /* Light yellow background for a warm and inviting look */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header .header-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        header .header-buttons button {
+            padding: 8px 15px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        header .header-buttons button:hover {
+            background-color: #575757;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            font-weight: 700;
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        aside {
+            background: #f9f9f9;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        article {
+            padding: 10px;
+            flex-grow: 1;
+        }
+        .article img {
+            width: 100%;
+            max-width: 300px; /* Set a maximum width for the images */
+            height: auto;
+            display: block;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+        .article h1, .article h2 {
+            font-size: 1.8em;
+            margin: 5px 0;
+        }
+        .image-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-group div {
+            margin: 10px;
+        }
+        footer {
+            background: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        a {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savoury and Sweet Dishes Restaurant</h1>
+        <div class="header-buttons">
+            <button onclick="location.href='search.html'">Search</button>
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="SSDR">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="browsedishes">Browse Dishes</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Savoury Dishes and Salads</h1>
+        <div class="image-group">
+            <div>
+                <h2>Cobb Salad with the Best Dressing</h2>
+                <img src="https://natashaskitchen.com/wp-content/uploads/2020/01/Cobb-Salad-Recipe-3-728x1092.jpg" alt="Cobb Salad">
+            </div>
+            <div>
+                <h2>Little Smokies Wrapped in Bacon</h2>
+                <img src="https://i.pinimg.com/originals/b2/b4/aa/b2b4aa5c4cb764ac7a785a435ea50835.jpg" alt="Little Smokies">
+            </div>
+        </div>
+        <aside>
+            <h1>Desserts and Cakes</h1>
+            <div class="image-group">
+                <div>
+                    <img src="https://th.bing.com/th/id/R.dd8f0b65d04ff9ef212814b49a2ce452?rik=QXHtREMuFhXofw&pid=ImgRaw&r=0" alt="Delightful and irresistible Dessert">
+                </div>
+                <div>
+                    <img src="https://cookingtaste.net/wp-content/uploads/2025/03/codinofouad_realistic_Close-up_amateur_photo_from_reddit._of__ef38ebb6-3101-4ea9-ae4c-5a1f42e3b4bb_0.webp" alt="Beverages">
+                </div>
+            </div>
+        </aside>
+    </article>
+    <footer>
+        <p>Contact us: +26778119117</p>
+        <p>Private Bag 002</p>
+        <p>savouryandsweetdishes@gmail.com</p>
+        <p>© 2025 Savoury and Sweet Dishes Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

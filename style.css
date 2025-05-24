@@ -1,0 +1,573 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000; /* black */
+    color: #fff; /* white */
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #111; /* dark black */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  header h1 {
+    color: #b19cd9; /* soft purple */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+  }
+  
+  nav ul li a:hover {
+    background-color: #6a0dad; /* rich purple */
+    transform: scale(1.05);
+  }
+  
+  nav ul li.button a {
+    background: #4CAF50; /* green */
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav ul li.button a:hover {
+    background: #45a049; /* darker green */
+  }
+  
+  /* Carousel Section */
+  .carousel {
+    margin-top: 3rem;
+  }
+  
+  .carousel-inner img {
+   max-height: 30rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-caption {
+    background: rgba(17, 17, 17, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .carousel-caption h5 {
+    color: #4CAF50;
+  }
+  
+  /* Carousel Controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Carousel Indicators */
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin: 3rem 0;
+  }
+  
+  .testimonials h2 {
+    color: #b19cd9; /* purple */
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonials p {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-style: italic;
+    color: #ccc;
+  }
+ /* Footer Styling */
+.footer {
+    background-color: #1a1a1a;
+    color: #eee;
+    padding: 3rem 2rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  
+  .footer-section h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section a {
+    color: #b19cd9;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(0.5) sepia(1) hue-rotate(90deg);
+  }
+  
+  /* Newsletter Form */
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  .newsletter-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 786px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .carousel-inner img {
+      max-height: 300px;
+    }
+  
+    .carousel-caption {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  }
+  /* About Page Specific Styles */
+
+/* About Text Blocks */
+.about-content {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    color: #f0f0f0;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(180, 156, 217, 0.2);
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  
+  /* Highlighted Owner Section */
+  .about-owner {
+    background-color: #222;
+    border-left: 6px solid #4CAF50;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    color: #eaeaea;
+    font-style: italic;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Image Presentation */
+  .about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .about-images img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-images img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Fix for incorrect <p1> use */
+  p1 {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    color: #ddd;
+  }
+  
+  /* Responsive Layout for About Images */
+  @media (max-width: 768px) {
+    .about-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/* Dish Category Section */
+.dish-category {
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    max-width: 1100px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
+  }
+  
+  .dish-category h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+  }
+  
+  /* Dish Items */
+  .dish-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  }
+  
+  .dish-details {
+    flex: 1 1 300px;
+  }
+  
+  .dish-details h3 {
+    color: #b19cd9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dish-details p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .dish-item img {
+    flex: 1 1 300px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Centered stand-alone images */
+  .dish-item:only-child,
+  .dish-item img:only-child {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dish-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .dish-details {
+      margin-bottom: 1rem;
+    }
+  
+    .dish-item img {
+      max-width: 100%;
+    }
+  }
+  
+  /* Contact Page Styles */
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(177, 156, 217, 0.2);
+  }
+  
+  /* Main Heading */
+  .container > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b19cd9;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Section Grid */
+  .section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Each Info Box */
+  .section > div {
+    flex: 1 1 250px;
+    background-color: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  }
+  
+  /* Bar Element */
+  .bar {
+    width: 50px;
+    height: 5px;
+    background-color: #4CAF50;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subheadings */
+  .section h2 {
+    color: #4CAF50;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Button */
+  .form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color:  #b19cd9 #b19cd9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+  
+    .section > div {
+      width: 100%;
+    }
+  }
+  .american-dishes {
+    padding: 20px;
+}
+
+.american-dishes h2 {
+    text-align: center;
+    color:  #b19cd9;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.dish {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dish-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dish h3 {
+    color: #006600;
+    margin: 10px 0;
+}
+
+.dish p {
+    color: #003366; 
+  
+    .chinese-dishes h2 {
+        text-align: center;
+        color:  #b19cd9;
+    }
+    
+    .inventory-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .dish {
+        background: #111;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .dish-image {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .dish h3 {
+        color: #006600;
+        margin: 10px 0;
+    }
+    
+    .dish p {
+        color: #003366; 
+      
